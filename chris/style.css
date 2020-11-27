@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-header{
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+/* video */
+.fullscreen-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fullscreen-video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.fullscreen-video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+}
+
+.header-content {
+    z-index: 2;
+    width: 100%; 
+}
+
+
+/* Top Banner styling */
+.top-banner {
+    padding: 4.2rem 10.2rem 4.2em 4.2rem;
+    border-bottom: #ffffff solid .1rem;
+}
+
+.top-banner-text {    
+    display: inline;
+    font-size: 2.2rem;
+    margin-left: 50%;
+}
+
+.top-banner-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 .5rem 0 1rem;
+    vertical-align: -.2rem;
+    filter: invert(100%) sepia(66%) saturate(2%) hue-rotate(342deg) brightness(113%) contrast(101%);
+}
+
+span img {
+    color: #ffffff;
+}
+
+#top-banner-mail {
+    margin-left: 2rem;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* Navigation bar styling */
+
+nav {
+    margin: 4.2rem 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 3.2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: #ffffff;
+}
+
+nav ul li:last-child {
+    margin-left: 19%;
+}
+
+nav ul li:first-child {
+    margin-left: 35%;
+}
+
+
+/* headline */
+
+.headline {
+    margin: 30rem auto 0;
+    width: fit-content;
+    text-align: center;
+}
+
+#headline-company-name,
+#headline-main-text,
+#headline-secondary-text {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#headline-company-name {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 0 .7rem .3rem;
+}
+
+#headline-main-text {
+    font-size: 5.5rem;
+    padding: 0 0 .4rem 0;
+    font-weight: 700;
+}
+
+#headline-secondary-text {
+    font-size: 2.5rem;   
+}
+
+/* headline buttons  */
+.headline-button-container {
+    margin: 7.3rem auto 0;
+    width: fit-content;
+}
+
+.headline-button-container a {
+    text-decoration: none; 
+}
+
+.headline-button-container a:visited {
+   color: #ffffff;
+}
+
+.headline-button {
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+    border-radius: 1rem;
+}
+
+.headline-button:last-child {
+    margin-left: 2.8rem;
+    padding: 1.3rem 8.9rem;
+    border: #ffffff solid 1px;
+}
+
+.headline-button:first-child {
+    padding: 1.3rem 6.1rem;  
+}
+
+.headline-button-1 {
+    background-color: #58863A;
+}
+
+
+/* upcoming trips display */
+
+.blue-background {
+    background-color: rgb(4, 119, 191, 0.03); 
+}
+
+.align-center {
+     text-align: center;
+}
+.trips-title-container {
+    padding-top: 7.2rem;
+    margin-bottom: 5.8rem;
+    margin-right: 16.5rem;
+    margin-left: 16.5rem;
+}
+
+.trips-title-container h1 {
+    color: #2F7E5E;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.trips-title-container p {
+    color: #657783;
+    font-size: 2.5rem;
+}
+
+.trips-container {
+    margin: 0 16.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.trip-card {
+   margin-bottom: 6.8rem;
+   width: 30%;
+}
+
+.trip-card h3 {
+    font-weight: 700;
+    color: #657783;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.trip-card p {
+    color: #58863A;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.trip-card img {
+    max-width: 100%;
+}
+
+#coast-trips-title {
+    align-items: left;
+}
