@@ -1,6 +1,6 @@
 <?php
 //connect to databse
-$con = mysqli_connect('localhost', 'Alex', 'test1234', 'chris_website');
+$con = mysqli_connect('localhost', 'chris', 'password', 'chris_website');
 
 // check for errors
 if (!$con) {
